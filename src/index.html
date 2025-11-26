@@ -1,31 +1,49 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./estilo.css">
-    <title>LOGIN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/estilo.css">
+  <link rel="stylesheet" href="/global.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Laguna School - Login</title>
 </head>
 <body>
-<div class="container">
-    <h2>Login</h2>
-    <form action="/login" method="get">
-        <label for="usuario"> Usuário: </label>
-        <input type="text" id="usuario" name="usuario">
 
-        <label> Senha: </label>
+<main class="container">
 
-        <input type="password" id="senha" name="senha">
+  <form action="/login" method="GET">
+    <h1>Laguna School</h1>
 
-        <label> Perfil (comum ou adm): </label>
-        <input type="text" id="perfil" name="perfil">
+    <div class="input-box">
+      <label>
+        <input placeholder="Usuário" type="text" name="usuario" required>
+      </label>
+    </div>
 
-        <section class="card">
-            <button type="submit"> ENTRAR </button>
-        </section>
-    </form>
-</div>
+    <div class="input-box">
+      <label>
+        <input placeholder="Senha (CPF)" type="password" name="senha" required>
+      </label>
+    </div>
+
+    <div class="input-box">
+      <label>
+        <input placeholder="Perfil (aluno ou professor)" type="text" name="perfil" required>
+      </label>
+    </div>
+
+    <div>
+      <button type="submit">Fazer Login</button>
+    </div>
+  </form>
+  <footer class="container-rodapep">
+    <img src="./src/assets/images/" alt="Ícone de loogo" class="Loogo">
+    <p>Produzido por BrainWave Layouts</p>
+  </footer>
+</main>
 </body>
 </html>
