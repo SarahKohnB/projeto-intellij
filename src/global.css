@@ -1,1 +1,51 @@
+* {
+    margin: 0;
+    padding: 0; box-sizing: border-box;
+    font-family: var(--font-principal);
+}
 
+a {
+    text-decoration: none;
+}
+
+
+:root {
+    /* --- CORES --- */
+    --color-neutral-bb: #F0F8FB;
+    --color-neutral-White: #EFF3F6;
+    /* --color-neutral-blue: #AFD7EA; Azul Claro de Fundo NAO USEI MAIS OPTEI POR USO DE IMAGEM */
+    --color-neutral-black: #000000;
+    --color-letras-usu: #7C7C7C;
+    --color-letra-prin: #1C247D;
+
+
+    --font-inter: 'Inter', sans-serif;
+     --font-Outfit: "Outfit", sans-serif;
+    --font-principal: var(--font-inter);
+
+
+    --font-laguna-1-size: 36px; /* Título principal */
+    --font-login-2-size: 24px;
+    --font-usuario-2-size: 20px;
+    --font-perfil-2-size: 24px;
+    --font-headline-3-size: 14px;
+    --font-professor-1-size:64px;
+    --font-professor-2-size: 24px;
+    --font-materias-1-size: 18px;
+    --font-atua-1-size: 20px;
+    --font-atua-2-size: 16px;
+    --font-usuario-2-size: 20px;
+
+
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+
+body {
+    min-height: 100vh;
+    background:url('/src/assets/images/azul.svg');
+
+
+}
