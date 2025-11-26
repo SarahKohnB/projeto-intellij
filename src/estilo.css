@@ -1,30 +1,137 @@
+@import url('/global.css');
+
+/* INICIO DA PRIMEIRA PAGINA DE LOGIN */
 body{
-    background-color: black;
-    text-color:pink;
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    background-size: cover;
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem na tela */
+
+
+    padding: 40px;
+
 }
+
 .container {
-    background-color: #AFD7EA;
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
+    width: 500px ;
+    height: 516px;
+    background-color: transparent;
+    border: 2px solid rgba(225,255,255, .2);
+    border-radius: 15px;
+
+    padding: 30px 40px;
+    box-shadow:rgba(1, 15, 56, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+
+
+}
+
+
+.container-rodapep {
+    display: flex;
+    align-items: center;
+    /* 2. Alinha verticalmente (centro) a imagem e o parágrafo */
+    gap: 10px;            /* 3. Adiciona espaço entre a imagem e o texto */
+
+    /* Estilos adicionais para combinar com o visual da imagem enviada */
+    padding: 10px 15px;    /* Espaçamento interno */
+    width: fit-content;
+     padding: 10px 15px 10px 0px;
+
+
+
+}
+
+.Loogo {
+    height: 32px 29px;
+    width: 30px 25px;
+    margin-left: 0px;
+         /* Define o tamanho do ícone/imagem */
+
+}
+
+.container-rodapep p {
+    /* Remove a margem padrão do parágrafo que pode atrapalhar o alinhamento */
+    flex-direction: column;
+    margin: 0px;
+    font-size: 16px;
+    color: var( --color-neutral-black);
+}
+form {
+    background-color: var(--color-text-light);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--color-shadow);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
 }
-input, button {
-    width: 90%;
-    padding: 8px;
-    margin: 10px 0;
+
+h1 {
+    font-family:'Outfit', sans-serif;
+    color: var(--color-letra-prin);
+    font-size: var( --font-laguna-1-size);
+    margin-bottom: 30px;
+    font-size: 28px;
 }
-.card{
-    background: rgba(93, 24, 158, 0.2);
-    border-radius: 5px;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.2s ease;
+
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
 }
-.card:hover{
-    transform: scale(1.12);
+
+.input-box input {
+
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid var(--color-input-border);
+    border-radius: 15px;
+    color: var(--color-neutral-black);
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    box-shadow:rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
+
+
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px; /* Posição do ícone */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
+button {
+    width: 70%;
+    padding: 10px;
+    background-color: var(--color-neutral-black);
+    color: var(--color-neutral-White);
+    border: none;
+    border-radius: 15px;
+    font-family:'Inter', sans-serif;
+    font-size: 18px;
+   box-shadow:rgba(37, 37, 37, 0.19) 0px 10px 20px, rgba(41, 41, 41, 0.23) 0px 6px 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color:var(--color-neutral-black);
+}
+/* Position absolute : A mesma coisa de relative,precisa das propriedade, porém, ele se baseia na tela e não no elemento em que ele se envolve, ele é util quando trabalha junto a outra position, assim,ele começa a trabalhar com o elemento pai*/
+/* Position relative: Precisa de propriedades "TOP, RIGHT(esquerda), BOTTOM E LEFT(direita)"*/
+/* Transform:translate reposiciona um elemento no eixo horizontal/vertical alterando sua posição sem afetar o layout de outro elemento na pagina */
+/* outline: cotorno de uma box */
+
+/* FIM DA PRIMEIRA PAGINA DE LOGIN */
